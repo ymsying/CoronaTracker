@@ -6,14 +6,14 @@
 
 import UIKit
 
-import Charts
+import DGCharts
 
 public class SimpleMarkerView: BalloonMarker {
 	public typealias ContentCallback = (_ entry: ChartDataEntry, _ highlight: Highlight) -> String
 	public typealias VisibilityCallback = (_ entry: ChartDataEntry, _ visible: Bool) -> Void
 
-	private var xValueFormatter: IAxisValueFormatter?
-	private var yValueFormatter: IAxisValueFormatter?
+	private var xValueFormatter: AxisValueFormatter?
+	private var yValueFormatter: AxisValueFormatter?
 	private var contentCallback: ContentCallback?
 	private var unhighlightTask: DispatchWorkItem?
 

@@ -6,7 +6,7 @@
 
 import Foundation
 
-import Charts
+import DGCharts
 
 class PercentValueFormatter: DefaultValueFormatter {
 	let minPercent: Double

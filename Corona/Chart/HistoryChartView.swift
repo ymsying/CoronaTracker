@@ -6,7 +6,7 @@
 
 import UIKit
 
-import Charts
+import DGCharts
 
 class HistoryChartView: BaseLineChartView {
 	override var shareableText: String? { L10n.Share.chartHistory }

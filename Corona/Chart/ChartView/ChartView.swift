@@ -6,7 +6,7 @@
 
 import UIKit
 
-import Charts
+import DGCharts
 
 class ChartView<C: ChartViewBase>: UIView, RegionChartView {
 	public let defaultColors = [

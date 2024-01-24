@@ -6,7 +6,7 @@
 
 import UIKit
 
-import Charts
+import DGCharts
 
 class CurrentChartView: ChartView<PieChartView> {
 	override var shareableText: String? { L10n.Share.current }

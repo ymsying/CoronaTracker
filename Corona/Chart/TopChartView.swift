@@ -6,7 +6,7 @@
 
 import UIKit
 
-import Charts
+import DGCharts
 
 class TopChartView: BaseBarChartView {
 	private var colors: [UIColor] {

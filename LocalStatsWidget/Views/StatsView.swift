@@ -56,7 +56,8 @@ struct StatsView: View {
 	@ViewBuilder
 	var body: some View {
 		VStack {
-			if displayTitle, let titleValue = type.rawValue {
+            let titleValue = type.rawValue
+			if displayTitle {
 				Text(titleValue)
 					.padding(.bottom, 0.5)
 					.textCase(.uppercase)

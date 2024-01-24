@@ -6,7 +6,7 @@
 
 import UIKit
 
-import Charts
+import DGCharts
 
 class RegionDataCell: UITableViewCell {
 	class var reuseIdentifier: String { String(describing: Self.self) }

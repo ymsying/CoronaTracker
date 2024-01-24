@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,10 +37,6 @@
 		115186AC241FAFCE00EBC83E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11518696241FAECB00EBC83E /* DataService.swift */; };
 		115186AD241FAFCE00EBC83E /* JHUWebDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11518697241FAECB00EBC83E /* JHUWebDataService.swift */; };
 		115186AE241FAFCE00EBC83E /* JHURepoDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11518698241FAECB00EBC83E /* JHURepoDataService.swift */; };
-		115186B1241FAFF300EBC83E /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = 115186B0241FAFF300EBC83E /* Disk */; };
-		115186B4241FB00000EBC83E /* CSV in Frameworks */ = {isa = PBXBuildFile; productRef = 115186B3241FB00000EBC83E /* CSV */; };
-		115186B6241FB03F00EBC83E /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = 115186B5241FB03F00EBC83E /* Disk */; };
-		115186B8241FB04200EBC83E /* CSV in Frameworks */ = {isa = PBXBuildFile; productRef = 115186B7241FB04200EBC83E /* CSV */; };
 		115186B9241FB31B00EBC83E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151869B241FAF6200EBC83E /* Extensions.swift */; };
 		115186BA242005E900EBC83E /* SystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111C76B52412C90500368F08 /* SystemColor.swift */; };
 		115186C024203D5100EBC83E /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115186BE242019EE00EBC83E /* Change.swift */; };
@@ -71,8 +67,6 @@
 		1186BC6E242B608200097E9E /* RegionDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1186BC6D242B608200097E9E /* RegionDataController.swift */; };
 		1186BC72242B64FE00097E9E /* RegionDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1186BC71242B64FE00097E9E /* RegionDataCell.swift */; };
 		119043B9242F6F2B0080E405 /* TrendlineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119043B8242F6F2B0080E405 /* TrendlineChartView.swift */; };
-		1195F1A5241EC1FB00FE718F /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 1195F1A4241EC1FB00FE718F /* Charts */; };
-		11BF32AA24156AE500270130 /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 11BF32A924156AE500270130 /* FloatingPanel */; };
 		11C6D37C243E4487003AC870 /* RegionChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D37B243E4487003AC870 /* RegionChartView.swift */; };
 		11C6D37E243E44D4003AC870 /* Charts+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D37D243E44D4003AC870 /* Charts+Extensions.swift */; };
 		11C6D380243E44FC003AC870 /* BaseChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D37F243E44FC003AC870 /* BaseChartView.swift */; };
@@ -132,19 +126,21 @@
 		6B2E65F2253C992C0010CB2D /* BMSGPKDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA24CD824559C9C00375D19 /* BMSGPKDataService.swift */; };
 		6B2E65F3253C992C0010CB2D /* BaseDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9FE08244DB2E100455088 /* BaseDataService.swift */; };
 		6B2E65F4253C992C0010CB2D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11518696241FAECB00EBC83E /* DataService.swift */; };
-		6B2E65F8253C9B7B0010CB2D /* CSV in Frameworks */ = {isa = PBXBuildFile; productRef = 6B2E65F7253C9B7B0010CB2D /* CSV */; };
-		6B2E65F9253C9B7B0010CB2D /* CSV in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 6B2E65F7253C9B7B0010CB2D /* CSV */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		6B2E65FC253C9B800010CB2D /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = 6B2E65FB253C9B800010CB2D /* Disk */; };
-		6B2E65FD253C9B800010CB2D /* Disk in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 6B2E65FB253C9B800010CB2D /* Disk */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		6BBBA13C253DFF9C00F09CD8 /* Widget-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBA13A253DFF9800F09CD8 /* Widget-Extensions.swift */; };
 		6BD24B4C253CB8D300F9089A /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD24B4B253CB8D300F9089A /* StatsView.swift */; };
 		6BD24B4E253CBB9B00F9089A /* LocalStatsSmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD24B49253CB8A900F9089A /* LocalStatsSmallWidgetView.swift */; };
 		CDA24CD924559C9C00375D19 /* BMSGPKDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA24CD824559C9C00375D19 /* BMSGPKDataService.swift */; };
 		CDA24CDA24559E3E00375D19 /* BMSGPKDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA24CD824559C9C00375D19 /* BMSGPKDataService.swift */; };
-		CDA50DE0242C7D330055BE4A /* CSV in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 115186B3241FB00000EBC83E /* CSV */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CDA50DE2242C7D350055BE4A /* Disk in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 115186B0241FAFF300EBC83E /* Disk */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CDA50DE3242C7D3C0055BE4A /* CSV in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 115186B7241FB04200EBC83E /* CSV */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CDA50DE5242C7D3D0055BE4A /* Disk in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 115186B5241FB03F00EBC83E /* Disk */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E0A6C8192B6118CA008A984D /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = E0A6C8182B6118CA008A984D /* FloatingPanel */; };
+		E0A6C81C2B611943008A984D /* CSV in Frameworks */ = {isa = PBXBuildFile; productRef = E0A6C81B2B611943008A984D /* CSV */; };
+		E0A6C81E2B611950008A984D /* CSV in Frameworks */ = {isa = PBXBuildFile; productRef = E0A6C81D2B611950008A984D /* CSV */; };
+		E0A6C8202B61195F008A984D /* CSV in Frameworks */ = {isa = PBXBuildFile; productRef = E0A6C81F2B61195F008A984D /* CSV */; };
+		E0A6C8232B6119AE008A984D /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = E0A6C8222B6119AE008A984D /* DGCharts */; };
+		E0A6C8252B6119B4008A984D /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = E0A6C8242B6119B4008A984D /* DGCharts */; };
+		E0A6C8272B6119BB008A984D /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = E0A6C8262B6119BB008A984D /* DGCharts */; };
+		E0A6C82A2B6119C6008A984D /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = E0A6C8292B6119C6008A984D /* Disk */; };
+		E0A6C82C2B6119F7008A984D /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = E0A6C82B2B6119F7008A984D /* Disk */; };
+		E0A6C82E2B6119FF008A984D /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = E0A6C82D2B6119FF008A984D /* Disk */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,8 +172,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6B2E65F9253C9B7B0010CB2D /* CSV in Embed Frameworks */,
-				6B2E65FD253C9B800010CB2D /* Disk in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,8 +182,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CDA50DE0242C7D330055BE4A /* CSV in Embed Frameworks */,
-				CDA50DE2242C7D350055BE4A /* Disk in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,8 +192,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CDA50DE3242C7D3C0055BE4A /* CSV in Embed Frameworks */,
-				CDA50DE5242C7D3D0055BE4A /* Disk in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,10 +318,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11BF32AA24156AE500270130 /* FloatingPanel in Frameworks */,
-				115186B1241FAFF300EBC83E /* Disk in Frameworks */,
-				1195F1A5241EC1FB00FE718F /* Charts in Frameworks */,
-				115186B4241FB00000EBC83E /* CSV in Frameworks */,
+				E0A6C8192B6118CA008A984D /* FloatingPanel in Frameworks */,
+				E0A6C8232B6119AE008A984D /* DGCharts in Frameworks */,
+				E0A6C81C2B611943008A984D /* CSV in Frameworks */,
+				E0A6C82A2B6119C6008A984D /* Disk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,9 +329,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115186B8241FB04200EBC83E /* CSV in Frameworks */,
+				E0A6C81E2B611950008A984D /* CSV in Frameworks */,
+				E0A6C8252B6119B4008A984D /* DGCharts in Frameworks */,
 				344ED322241AC7AA004C4EA8 /* NotificationCenter.framework in Frameworks */,
-				115186B6241FB03F00EBC83E /* Disk in Frameworks */,
+				E0A6C82C2B6119F7008A984D /* Disk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,10 +340,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B2E65F8253C9B7B0010CB2D /* CSV in Frameworks */,
+				E0A6C8272B6119BB008A984D /* DGCharts in Frameworks */,
 				6B2E65C9253C984B0010CB2D /* SwiftUI.framework in Frameworks */,
+				E0A6C82E2B6119FF008A984D /* Disk in Frameworks */,
 				6B2E65C7253C984B0010CB2D /* WidgetKit.framework in Frameworks */,
-				6B2E65FC253C9B800010CB2D /* Disk in Frameworks */,
+				E0A6C8202B61195F008A984D /* CSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,10 +681,10 @@
 			);
 			name = "Corona Tracker";
 			packageProductDependencies = (
-				11BF32A924156AE500270130 /* FloatingPanel */,
-				1195F1A4241EC1FB00FE718F /* Charts */,
-				115186B0241FAFF300EBC83E /* Disk */,
-				115186B3241FB00000EBC83E /* CSV */,
+				E0A6C8182B6118CA008A984D /* FloatingPanel */,
+				E0A6C81B2B611943008A984D /* CSV */,
+				E0A6C8222B6119AE008A984D /* DGCharts */,
+				E0A6C8292B6119C6008A984D /* Disk */,
 			);
 			productName = Corona;
 			productReference = 1162D128240D05F600647002 /* Corona Tracker.app */;
@@ -713,8 +705,9 @@
 			);
 			name = Widget;
 			packageProductDependencies = (
-				115186B5241FB03F00EBC83E /* Disk */,
-				115186B7241FB04200EBC83E /* CSV */,
+				E0A6C81D2B611950008A984D /* CSV */,
+				E0A6C8242B6119B4008A984D /* DGCharts */,
+				E0A6C82B2B6119F7008A984D /* Disk */,
 			);
 			productName = CoronaTrackerWidget;
 			productReference = 344ED31F241AC7AA004C4EA8 /* Widget.appex */;
@@ -735,8 +728,9 @@
 			);
 			name = LocalStatsWidgetExtension;
 			packageProductDependencies = (
-				6B2E65F7253C9B7B0010CB2D /* CSV */,
-				6B2E65FB253C9B800010CB2D /* Disk */,
+				E0A6C81F2B61195F008A984D /* CSV */,
+				E0A6C8262B6119BB008A984D /* DGCharts */,
+				E0A6C82D2B6119FF008A984D /* Disk */,
 			);
 			productName = LocalStatsWidgetExtension;
 			productReference = 6B2E65C5253C984B0010CB2D /* LocalStatsWidgetExtension.appex */;
@@ -798,10 +792,10 @@
 			);
 			mainGroup = 1162D11F240D05F600647002;
 			packageReferences = (
-				1162D14B240EE5B800647002 /* XCRemoteSwiftPackageReference "Charts" */,
-				11BF32A824156AE500270130 /* XCRemoteSwiftPackageReference "FloatingPanel" */,
-				115186AF241FAFF300EBC83E /* XCRemoteSwiftPackageReference "Disk" */,
-				115186B2241FB00000EBC83E /* XCRemoteSwiftPackageReference "CSV" */,
+				E0A6C8172B6118CA008A984D /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+				E0A6C81A2B611943008A984D /* XCRemoteSwiftPackageReference "CSV" */,
+				E0A6C8212B6119AE008A984D /* XCRemoteSwiftPackageReference "Charts" */,
+				E0A6C8282B6119C6008A984D /* XCRemoteSwiftPackageReference "Disk" */,
 			);
 			productRefGroup = 1162D129240D05F600647002 /* Products */;
 			projectDirPath = "";
@@ -1174,6 +1168,7 @@
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Corona/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1198,6 +1193,7 @@
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Corona/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1219,6 +1215,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1241,6 +1238,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1291,8 +1289,8 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_ENTITLEMENTS = LocalStatsWidget/LocalStatsWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				CURRENT_PROJECT_VERSION = 1.7.2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LocalStatsWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1352,79 +1350,89 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		115186AF241FAFF300EBC83E /* XCRemoteSwiftPackageReference "Disk" */ = {
+		E0A6C8172B6118CA008A984D /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mhdhejazi/Disk";
+			repositoryURL = "https://github.com/scenee/FloatingPanel";
 			requirement = {
-				branch = dynamic;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.1;
 			};
 		};
-		115186B2241FB00000EBC83E /* XCRemoteSwiftPackageReference "CSV" */ = {
+		E0A6C81A2B611943008A984D /* XCRemoteSwiftPackageReference "CSV" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mhdhejazi/CSV.swift";
+			repositoryURL = "https://github.com/yaslab/CSV.swift";
 			requirement = {
-				branch = dynamic;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.3;
 			};
 		};
-		1162D14B240EE5B800647002 /* XCRemoteSwiftPackageReference "Charts" */ = {
+		E0A6C8212B6119AE008A984D /* XCRemoteSwiftPackageReference "Charts" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mhdhejazi/Charts";
+			repositoryURL = "https://github.com/danielgindi/Charts";
 			requirement = {
-				branch = "half-pie";
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
 			};
 		};
-		11BF32A824156AE500270130 /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
+		E0A6C8282B6119C6008A984D /* XCRemoteSwiftPackageReference "Disk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mhdhejazi/FloatingPanel";
+			repositoryURL = "https://github.com/saoudrizwan/Disk.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		115186B0241FAFF300EBC83E /* Disk */ = {
+		E0A6C8182B6118CA008A984D /* FloatingPanel */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 115186AF241FAFF300EBC83E /* XCRemoteSwiftPackageReference "Disk" */;
-			productName = Disk;
-		};
-		115186B3241FB00000EBC83E /* CSV */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 115186B2241FB00000EBC83E /* XCRemoteSwiftPackageReference "CSV" */;
-			productName = CSV;
-		};
-		115186B5241FB03F00EBC83E /* Disk */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 115186AF241FAFF300EBC83E /* XCRemoteSwiftPackageReference "Disk" */;
-			productName = Disk;
-		};
-		115186B7241FB04200EBC83E /* CSV */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 115186B2241FB00000EBC83E /* XCRemoteSwiftPackageReference "CSV" */;
-			productName = CSV;
-		};
-		1195F1A4241EC1FB00FE718F /* Charts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1162D14B240EE5B800647002 /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = Charts;
-		};
-		11BF32A924156AE500270130 /* FloatingPanel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 11BF32A824156AE500270130 /* XCRemoteSwiftPackageReference "FloatingPanel" */;
+			package = E0A6C8172B6118CA008A984D /* XCRemoteSwiftPackageReference "FloatingPanel" */;
 			productName = FloatingPanel;
 		};
-		6B2E65F7253C9B7B0010CB2D /* CSV */ = {
+		E0A6C81B2B611943008A984D /* CSV */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 115186B2241FB00000EBC83E /* XCRemoteSwiftPackageReference "CSV" */;
+			package = E0A6C81A2B611943008A984D /* XCRemoteSwiftPackageReference "CSV" */;
 			productName = CSV;
 		};
-		6B2E65FB253C9B800010CB2D /* Disk */ = {
+		E0A6C81D2B611950008A984D /* CSV */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 115186AF241FAFF300EBC83E /* XCRemoteSwiftPackageReference "Disk" */;
+			package = E0A6C81A2B611943008A984D /* XCRemoteSwiftPackageReference "CSV" */;
+			productName = CSV;
+		};
+		E0A6C81F2B61195F008A984D /* CSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A6C81A2B611943008A984D /* XCRemoteSwiftPackageReference "CSV" */;
+			productName = CSV;
+		};
+		E0A6C8222B6119AE008A984D /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A6C8212B6119AE008A984D /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		E0A6C8242B6119B4008A984D /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A6C8212B6119AE008A984D /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		E0A6C8262B6119BB008A984D /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A6C8212B6119AE008A984D /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		E0A6C8292B6119C6008A984D /* Disk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A6C8282B6119C6008A984D /* XCRemoteSwiftPackageReference "Disk" */;
+			productName = Disk;
+		};
+		E0A6C82B2B6119F7008A984D /* Disk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A6C8282B6119C6008A984D /* XCRemoteSwiftPackageReference "Disk" */;
+			productName = Disk;
+		};
+		E0A6C82D2B6119FF008A984D /* Disk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A6C8282B6119C6008A984D /* XCRemoteSwiftPackageReference "Disk" */;
 			productName = Disk;
 		};
 /* End XCSwiftPackageProductDependency section */

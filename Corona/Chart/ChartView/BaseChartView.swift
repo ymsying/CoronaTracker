@@ -6,7 +6,7 @@
 
 import UIKit
 
-import Charts
+import DGCharts
 
 class BaseBarChartView: ChartView<BarChartViewWithHorizontalPanning> {
 	override var interactive: Bool {

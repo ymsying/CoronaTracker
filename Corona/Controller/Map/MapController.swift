@@ -109,12 +109,12 @@ class MapController: UIViewController {
 
 		panelController = FloatingPanelController()
 		panelController.delegate = self
-		panelController.surfaceView.cornerRadius = 12
-		panelController.surfaceView.shadowHidden = false
+        panelController.surfaceView.appearance.cornerRadius = 12
+        panelController.surfaceView.appearance.shadows.first?.hidden = false
 		panelController.set(contentViewController: regionPanelController)
 		panelController.track(scrollView: regionPanelController.regionDataController.tableView)
 		panelController.surfaceView.backgroundColor = .clear
-		panelController.surfaceView.contentView.backgroundColor = .clear
+        panelController.surfaceView.contentView?.backgroundColor = .clear
 
 		if #available(iOS 11.0, *), view.safeAreaInsets.bottom == 0 {
 			panelController.additionalSafeAreaInsets = .init(top: 0, left: 0, bottom: 15, right: 0)
@@ -316,14 +316,14 @@ extension MapController: MKMapViewDelegate {
 
 extension MapController: FloatingPanelControllerDelegate {
 	func floatingPanel(_ controller: FloatingPanelController,
-					   layoutFor newCollection: UITraitCollection) -> FloatingPanelLayout? {
+                       layoutFor newCollection: UITraitCollection) -> FloatingPanelLayout {
 
 		(newCollection.userInterfaceIdiom == .pad ||
 			newCollection.verticalSizeClass == .compact) ? LandscapePanelLayout() : PanelLayout()
 	}
 
 	func floatingPanelWillBeginDragging(_ controller: FloatingPanelController) {
-		let currentPosition = controller.position
+        let currentPosition = controller.state
 
 		// currentPosition == .full means deceleration will start from top to bottom (i.e. user dragging the panel down)
 		if currentPosition == .full, regionPanelController.isSearching {

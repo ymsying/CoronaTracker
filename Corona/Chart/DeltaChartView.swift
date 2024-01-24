@@ -6,7 +6,7 @@
 
 import UIKit
 
-import Charts
+import DGCharts
 
 class DeltaChartView: BaseBarChartView {
 	override var shareableText: String? { L10n.Chart.delta }
@@ -71,10 +71,12 @@ class DeltaChartView: BaseBarChartView {
 
 		let increasingColor = showNewDeaths ? UIColor.systemRed : UIColor.systemOrange
 		chartView.legend.setCustom(entries: [
-			LegendEntry(label: "↑ " + L10n.Chart.Delta.increasing, form: .circle, formSize: 12,
-						formLineWidth: 0, formLineDashPhase: 0, formLineDashLengths: nil, formColor: increasingColor),
-			LegendEntry(label: "↓ " + L10n.Chart.Delta.decreasing, form: .circle, formSize: 12,
-						formLineWidth: 0, formLineDashPhase: 0, formLineDashLengths: nil, formColor: .systemBlue)
+            LegendEntry(label: "↑ " + L10n.Chart.Delta.increasing),
+            LegendEntry(label: "↓ " + L10n.Chart.Delta.decreasing),
+//			LegendEntry(label: "↑ " + L10n.Chart.Delta.increasing, form: .circle, formSize: 12,
+//						formLineWidth: 0, formLineDashPhase: 0, formLineDashLengths: nil, formColor: increasingColor),
+//			LegendEntry(label: "↓ " + L10n.Chart.Delta.decreasing, form: .circle, formSize: 12,
+//						formLineWidth: 0, formLineDashPhase: 0, formLineDashLengths: nil, formColor: .systemBlue)
 		])
 
 		let changes = series.changes()

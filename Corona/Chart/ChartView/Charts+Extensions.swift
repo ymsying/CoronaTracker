@@ -6,7 +6,7 @@
 
 import UIKit
 
-import Charts
+import DGCharts
 
 extension ChartViewBase {
 	func shouldAllowPanGesture(for gestureRecognizer: UIGestureRecognizer) -> Bool {

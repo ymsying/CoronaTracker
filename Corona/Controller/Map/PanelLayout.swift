@@ -9,25 +9,13 @@ import UIKit
 import FloatingPanel
 
 class PanelLayout: FloatingPanelLayout {
-	public var supportedPositions: Set<FloatingPanelPosition> {
-		Set([.full, .half])
-	}
-
-	public var initialPosition: FloatingPanelPosition {
-		#if targetEnvironment(macCatalyst)
-		return .full
-		#else
-		return UIDevice.current.userInterfaceIdiom == .pad ? .full : .half
-		#endif
-	}
-
-	public func insetFor(position: FloatingPanelPosition) -> CGFloat? {
-		switch position {
-		case .full: return 16
-		case .half: return 198
-		default: return nil
-		}
-	}
+    let position: FloatingPanelPosition = .bottom
+    let initialState: FloatingPanelState = .tip
+    let anchors: [FloatingPanelState : FloatingPanelLayoutAnchoring] = [
+        .full: FloatingPanelLayoutAnchor(absoluteInset: 18.0, edge: .top, referenceGuide: .safeArea),
+        .half: FloatingPanelLayoutAnchor(fractionalInset: 0.5, edge: .bottom, referenceGuide: .safeArea),
+        .tip: FloatingPanelLayoutAnchor(absoluteInset: 69.0, edge: .bottom, referenceGuide: .safeArea),
+    ]
 
 	func prepareLayout(surfaceView: UIView, in view: UIView) -> [NSLayoutConstraint] {
 		if #available(iOS 11.0, *) {
@@ -42,9 +30,9 @@ class PanelLayout: FloatingPanelLayout {
 			]
 		}
 	}
-
-	func backdropAlphaFor(position: FloatingPanelPosition) -> CGFloat {
-		position == .full ? 0.3 : 0.0
+    
+    func backdropAlpha(for state: FloatingPanelState) -> CGFloat {
+        state == .full ? 0.3 : 0.0
 	}
 }
 
@@ -63,7 +51,7 @@ class LandscapePanelLayout: PanelLayout {
 		}
 	}
 
-	override func backdropAlphaFor(position: FloatingPanelPosition) -> CGFloat {
+    override func backdropAlpha(for state: FloatingPanelState) -> CGFloat {
 		0.0
 	}
 }

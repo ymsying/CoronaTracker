@@ -6,7 +6,7 @@
 
 import UIKit
 
-import Charts
+import DGCharts
 
 class TrendlineChartView: BaseLineChartView {
 	private static let maxItems = 6

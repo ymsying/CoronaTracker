@@ -1,43 +1,41 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Charts",
-        "repositoryURL": "https://github.com/mhdhejazi/Charts",
-        "state": {
-          "branch": "half-pie",
-          "revision": "a04c032c47e33fd71c52232355316c9955b35eb3",
-          "version": null
-        }
-      },
-      {
-        "package": "CSV.swift",
-        "repositoryURL": "https://github.com/mhdhejazi/CSV.swift",
-        "state": {
-          "branch": "dynamic",
-          "revision": "f13cbf050b29b0f55c4d126f5ad4647e497ae4fa",
-          "version": null
-        }
-      },
-      {
-        "package": "Disk",
-        "repositoryURL": "https://github.com/mhdhejazi/Disk",
-        "state": {
-          "branch": "dynamic",
-          "revision": "804d20a82d84e9dce6309c147d5d871b2bcbb48a",
-          "version": null
-        }
-      },
-      {
-        "package": "FloatingPanel",
-        "repositoryURL": "https://github.com/mhdhejazi/FloatingPanel",
-        "state": {
-          "branch": "master",
-          "revision": "09dd385be2877288055ed8e07ffa8b197f8902e7",
-          "version": null
-        }
+  "pins" : [
+    {
+      "identity" : "charts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/danielgindi/Charts",
+      "state" : {
+        "revision" : "0a229f8c914b0ec93798cee058cf75b339297513",
+        "version" : "5.0.0"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "csv.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yaslab/CSV.swift",
+      "state" : {
+        "revision" : "81d2874c51db364d7e1d71b0d99018a294c87ac1",
+        "version" : "2.4.3"
+      }
+    },
+    {
+      "identity" : "disk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/saoudrizwan/Disk.git",
+      "state" : {
+        "revision" : "b0cb4fdf23e51849cc2460bdc6de795c3bcca99d",
+        "version" : "0.6.4"
+      }
+    },
+    {
+      "identity" : "floatingpanel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scenee/FloatingPanel",
+      "state" : {
+        "revision" : "5b33d3d5ff1f50f4a2d64158ccfe8c07b5a3e649",
+        "version" : "2.8.1"
+      }
+    }
+  ],
+  "version" : 2
 }
